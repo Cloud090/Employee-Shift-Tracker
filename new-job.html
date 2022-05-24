@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='nav.css' rel='stylesheet' />
+        <link href='main.css' rel='stylesheet' />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="form.css" />
+
+    </head>
+    <body>
+        <!--Start Nav-->
+        <nav>
+            <div class="navbar">
+              <div class="container nav-container">
+                  <input class="checkbox" type="checkbox" name="" id="" />
+                  <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                  </div>  
+                <div class="logo">
+                  <h1>Add Job</h1>
+                </div>
+                <div class="menu-items">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="newshift.html">Add Shift</a></li>
+                  <li><a href="Shifts.html">Shifts</a></li>
+                  <li><a href="new-job.html">Add Job</a></li>
+                  <li><a href="#">contact</a></li>
+                </div>
+              </div>
+            </div>
+          </nav>
+        <!--End Nav-->
+
+
+        <div class="alert"></div>
+    <form id="save-later-form">
+
+      <h3>Enter New Job</h3>
+
+      <label for="ebn">Employer Business Name</label>
+      <input type="text" name="ebn" id="ebn" />
+
+      </select>
+
+      <label for="roles">Enter All Rolls/Positions you will fill</label>
+      <textarea
+        name="roles"
+        id="roles"
+        placeholder="Seperate each role by a comma"
+      ></textarea>
+      <button type="submit" id="submit">CANCEL</button>
+      <button type="submit" id="save">ADD JOB</button>
+    </form>
+
+
+    </body>
+    
+    <script src="form.js"></script>
+
+
+
+
+</html>

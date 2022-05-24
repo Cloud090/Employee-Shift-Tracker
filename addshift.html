@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='nav.css' rel='stylesheet' />
+        <link href='main.css' rel='stylesheet' />
+
+
+    </head>
+    <body>
+        <!--Start Nav-->
+        <nav>
+            <div class="navbar">
+              <div class="container nav-container">
+                  <input class="checkbox" type="checkbox" name="" id="" />
+                  <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                  </div>  
+                <div class="logo">
+                  <h1>Add Shift</h1>
+                </div>
+                <div class="menu-items">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="addshift.html">Add Shift</a></li>
+                  <li><a href="Shifts.html">Shifts</a></li>
+                  <li><a href="#">portfolio</a></li>
+                  <li><a href="#">contact</a></li>
+                </div>
+              </div>
+            </div>
+          </nav>
+        <!--End Nav-->
+
+    <script src="localstorage.js">
+    <section class="form_container shift_container">
+            <form action="Shifts.html" class="shift_form" id="addshift">
+                <h2>
+                    Add Shift
+                </h2>
+                <section class="inputs_container">
+                    <div class="input-field">
+                        <select name="Shift For:" id="job">
+                            <option value="">option1</option>
+                            <option value="">option2</option>
+                        </select>
+                    </div>
+                    <div class="input-field">
+                        <input type="date" id="startDate" class="user" required />
+                        <label for="date" class="user" id="startDate"><div class="text">Start Date</div></label>
+                    </div>
+                    <div class="input-field">
+                        <input type="time" id="startTime" class="user" required />
+                        <label for="time" class="user" id="startTime"><div class="text">Start Time</div></label>
+                    </div>
+                    <div class="input-field">
+                        <input type="date" id="endDate" class="user" required />
+                        <label for="date" class="user" id="endDate"><div class="text">End Date</div></label>
+                    </div>
+                    <div class="input-field">
+                        <input type="time" id="endTime" class="user" required />
+                        <label for="time" class="user" id="endTime"><div class="text">End Time</div></label>
+                    </div>
+                    <div class="input-field">
+                        <input type="number" id="pay" class="user" required />
+                        <label for="number" class="user" id="pay"><div class="text">Pay</div></label>
+                    </div>
+                    
+                </section>
+                <input type="reset" value="Cancel" />
+                <input type="submit" value="Add Shift" id="addShiftButton"/>
+                
+            </form>
+            <ul id="shifts"></ul>
+        </section>
+        </script>
+    </body>
+</html>
