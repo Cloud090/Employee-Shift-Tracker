@@ -51,7 +51,7 @@
                   <li><a href="newshift.html">Add Shift</a></li>
                   <li><a href="Shifts.html">Shifts</a></li>
                   <li><a href="new-job.html">New Job</a></li>
-                  <li><a href="#">contact</a></li>
+                  <li><a href="pay.html">Pay Settings</a></li>
                 </div>
               </div>
             </div>
@@ -89,31 +89,31 @@
         right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
       },
       defaultView: 'dayGridMonth',
-      defaultDate: '2020-02-12',
+      defaultDate: '2022-05-25',
       navLinks: true, // can click day/week names to navigate views
       editable: true,
-      eventLimit: true, // allow "more" link when too many events
+      eventLimit: true, // allow "more" link when too many events document.getElementById("dateStart")
       events: [
         {
-          title: document.getElementById("shift-for"),
-          start: document.getElementById("dateStart"),
+          title: window.localStorage.getItem("Shift"),
+          start: window.localStorage.getItem("Shift"),
         },
         {
           title: 'Unavailable',
-          start: '2020-02-07',
-          end: '2020-02-10'
+          start: '2022-05-07',
+          end: '2022-05-10'
         },
         {
           groupId: 999,
           title: 'Joes Pizza Shift',
-          start: '2020-02-09T13:00:00',
-          end: '2020-02-09T16:00:00',
+          start: '2022-05-09T13:00:00',
+          end: '2022-05-09T16:00:00',
         },
         {
           groupId: 999,
           title: 'Joes Toys Shift',
-          start: '2020-02-16T16:30:00',
-          end: '2020-02-16T21:30:00'
+          start: '2022-05-16T16:30:00',
+          end: '2022-05-16T21:30:00'
         },
 
       ]

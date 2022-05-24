@@ -21,7 +21,7 @@
                     <span class="line line3"></span>
                   </div>  
                 <div class="logo">
-                  <h1>Add Job</h1>
+                  <h1>Add Shift</h1>
                 </div>
                 <div class="menu-items">
                   <li><a href="index.html">Home</a></li>
@@ -39,21 +39,34 @@
         <div class="alert"></div>
     <form id="save-later-form">
 
-      <h3>Enter New Job</h3>
+      <h3>Update Pay</h3>
 
-      <label for="ebn">Employer Business Name</label>
-      <input type="text" name="ebn" id="ebn" />
+      <label for="8-5">Pay weekday mornings 5 - 8 am:</label>
+      <input type="text" name="8-5" id="8-5" />
 
-      </select>
+      <label for="5-8weekend">weekend morning Pay 5 - 8 am:</label>
+      <input type="text" name="5-8weekend" id="5-8weekend" />
 
-      <label for="roles">Enter All Rolls/Positions you will fill</label>
-      <textarea
-        name="roles"
-        id="roles"
-        placeholder="Seperate each role by a comma"
-      ></textarea>
+      <label for="weekday">Weekday pay 8 am - 5 pm:</label>
+      <input type="text" name="weekday" id="weekday" />
+      
+      <label for="weekend">Weekend Pay 8 am - 5 pm:</label>
+      <input type="text" name="weekend" id="weekend" />
+
+      <label for="weeknight">Weeknight Pay 5 - 10:</label>
+      <input type="text" name="weeknight" id="weeknight"  />
+
+      <label for="weekendnight">Weekend Pay 5 - 10 pm:</label>
+      <input type="text" name="weekendnight" id="weekendnight" />
+
+      <label for="10-5week">Weeknight Pay 10pm - 5 am:</label>
+      <input type="text" name="10-5week" id="10-5week" />
+
+      <label for="10-5weekend">Weekend night Pay 10pm - 5 am:</label>
+      <input type="text" name="10-5weekend" id="10-5weekend" />
+   <label for="space"></label>
       <button type="submit" id="submit">CANCEL</button>
-      <button type="submit" id="save">ADD JOB</button>
+      <button type="submit" id="save">UPDATE PAY</button>
     </form>
 
 
